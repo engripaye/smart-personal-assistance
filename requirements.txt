@@ -1,0 +1,17 @@
+SpeechRecognition==3.10.0
+pyaudio==0.2.14 # may need wheel on Windows; or use sounddevice as alternative
+pyttsx3==2.90
+transformers==4.43.4
+torch>=2.2.0 ; platform_system != "Darwin" or platform_machine != "arm64"
+# macOS arm64 can use accelerated wheels from PyPI; if issues, pin a compatible torch version
+python-dotenv==1.0.1
+feedparser==6.0.11
+requests==2.32.3
+beautifulsoup4==4.12.3
+pydantic==2.8.2
+ollama==0.3.0 # Python client for Ollama (optional)
+# Optional STT backends
+vosk==0.3.45 # offline STT
+faster-whisper==1.0.3 # local Whisper (needs ffmpeg)
+# Testing
+pytest==8.3.2
